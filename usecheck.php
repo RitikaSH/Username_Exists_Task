@@ -1,6 +1,9 @@
 <?php
 
-  $conn=mysqli_connect("localhost","root","Ritika#097","username_exists");
+  $conn=mysqli_connect("localhost","root","","username_exists");
+  if (!$con) {
+	die('Could not connect: ' . mysqli_error($con));
+  }
   
   if(isset($_POST['user_name']))
   {
