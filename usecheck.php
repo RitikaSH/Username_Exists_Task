@@ -1,8 +1,8 @@
 <?php
 
   $conn=mysqli_connect("localhost","root","","username_exists");
-  if (!$con) {
-	die('Could not connect: ' . mysqli_error($con));
+  if (!$conn) {
+	die('Could not connect: ' . mysqli_error($conn));
   }
   
   if(isset($_POST['user_name']))
